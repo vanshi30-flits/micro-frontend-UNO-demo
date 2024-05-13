@@ -1,0 +1,949 @@
+:root {
+    --contentTextColor: rgb(0, 0, 0);
+    --contentBGColor: rgb(225, 225, 225, 0);
+    --borderColor: rgb(142, 142, 142);
+    --primaryButtonBGColor: rgb(32, 2, 100);
+    --primaryButtonTextColor: rgb(255, 255, 255);
+    --secondaryButtonBGColor:rgb(32,2,100);
+    --color-background:255,255,255;
+    --color-foreground: 18,18,18;
+    
+}
+
+/* *:focus-visible{
+    outline: .2rem solid rgba(var(--color-foreground));
+    outline-offset: .3rem;
+    box-shadow: 0 0 0 .3rem rgb(var(--color-background)),0 0 .5rem .4rem rgba(var(--color-foreground), .3);
+} */
+
+.profile-outermost-container {
+    /* height was inline styling in uno */
+
+
+
+    /* height: 476px; */
+    background-color: var(--contentBGColor);
+    color: var(--contentTextColor);
+    transition: left .3s, opacity .3s;
+    margin-left: 242px;
+    /* float: right; */
+    /* doubt what is calc(100%-242px) */
+    width: calc(100% - 242px);
+}
+
+.profile-outermost-container2 {
+    position: relative;
+    width: 100%;
+}
+
+.profile-outermost-container3 {
+    height: 100%;
+    width: 100%;
+}
+
+
+.profile-wrapper {
+    padding: 0 10px;
+    height: 100%;
+}
+
+.profile-outer-container {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.profile-outer-container2 {
+    margin-left: -15px;
+    ;
+    margin-right: -15px;
+}
+
+.profile-outer-container2::before,
+.profile-outer-container2::after {
+    content: '';
+    display: table;
+}
+
+.profile-outer-container2::after {
+    /* clear: both; */
+}
+
+.profile-inner-container {
+    margin-bottom: 15px !important;
+}
+
+.profile-inner-container2 {
+    margin-bottom: 15px !important;
+}
+.second-inner-container {
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+.second-inner-container2{
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;  
+}
+
+.profile-inner-container2 {
+    /* float: left; */
+
+    /* width: 50%; */
+}
+
+.profile-innermost-container {
+    display: flex;
+
+}
+.profile-innermost-container2 {
+    display: flex;
+}
+.added-profile-innermost-container{
+    width: 50%;
+}
+
+.innermost-input-profile-container {
+    width: 100%;
+    align-items: center;
+    position: relative;
+
+}
+.added-innermost-input-profile-container{
+    position: relative;
+    display: block;
+
+}
+.innermost-input-profile-container2 {
+    width: 100%;
+    align-items: center;
+    position: relative;
+
+}
+.profile-label {
+    cursor: auto;
+    color: var(--contentTextColor);
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 0;
+    margin-bottom: 0;
+    min-width: 145px;
+    position: relative;
+    text-transform: capitalize;
+    width: 145px;
+}
+
+.profile-label2 {
+    cursor: auto;
+    color: var(--contentTextColor);
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 0;
+    margin-bottom: 0;
+    min-width: 145px;
+    position: relative;
+    text-transform: capitalize;
+    width: 145px;
+}
+.added-profile-label{
+    margin-bottom: 3px;
+}
+
+.added-profile-label2{
+    cursor: auto;
+    color: var(--contentTextColor);
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 0;
+
+    margin-bottom: 3px;
+
+
+    min-width: 145px;
+    position: relative;
+    text-transform: capitalize;
+    width: 145px;
+}
+.profile-input {
+    appearance: none;
+    background: 0 0 !important;
+    border: 0;
+    border-color: var(--borderColor);
+    border-radius: 7px;
+    box-shadow: none !important;
+    color: var(--contentTextColor) !important;
+    cursor: text;
+    display: inline-block;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    height: auto;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+    outline: 0;
+    padding: 3px 0;
+    position: relative;
+    text-align: left;
+    transition: all .3s ease;
+    vertical-align: initial;
+    width: 100%;
+}
+.added-profile-input{
+    justify-content: center;
+    border: 1px solid;
+    display: flex;
+    font-weight: 400;
+    height: 36px;
+    padding: 8px;
+
+}
+
+.added-contact-input{
+border: 1px solid;
+font-weight: 400;
+padding: 8px 73px 8px 40px;
+}
+.added2-contact-input{
+    appearance: none;
+    background: 0 0 !important;
+    
+    border-radius: 7px;
+    /* border-color: var(--borderColor); */
+    box-shadow: none !important;
+    color: var(--contentTextColor) !important;
+    cursor: text;
+    display: inline-block;
+    font-size: 16px;
+    font-style: normal;
+    /* font-weight: 700; */
+    height: auto;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+    outline: 0;
+    
+    position: relative;
+    text-align: left;
+    transition: all .3s ease;
+    vertical-align: initial;
+    width: 100%;
+}
+.contact-inner-input{
+    /* background-color: violet; */
+    appearance: none;
+    border: 0;
+    border-radius: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-shadow: none !important;
+    color: var(--contentTextColor) !important;
+    
+    display: flex;
+    font-size: 16px;
+    font-style: normal;
+    
+    font-weight: 400;
+    height: 36px;
+    justify-content: center;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+    outline: 0;
+    padding: 8px;
+    pointer-events: none;
+    text-align: left;
+    transition: all .3s ease;
+    vertical-align: initial;
+}
+.contact-inner-input:disabled{
+    border-color:var(--borderColor);
+    background: 0 0 !important;
+    cursor: auto !important;
+    opacity: 1 !important;
+
+}
+.country-select-dropdown{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 36px;
+    width: 65px;
+    border-left: 1px solid;
+    border-color:var(--borderColor) ;
+    /* background-color: rgba(255, 255, 0, 0.616); */
+}
+.country-select-flag{
+    position: absolute;
+    left: 10px;
+    /* background-color: red; */
+    width: 25px !important;
+    display: inline-flex;
+    pointer-events: none;
+    height: 18.75px !important;
+
+    /* image not coming */
+    background-image: url('https://cdn.shopify.com/s/files/1/0030/7491/6461/files/flags.svg?v=1646045459')!important;
+    background-size: 806.25px 643.75px!important;
+    background-repeat: no-repeat !important;
+}
+.country-select-dowm-arrow-container{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: space-between;
+    /* background-color: purple; */
+    width: 100%;
+}
+.select-option-of-country-select{
+    appearance: none;
+    align-items: center;
+    background: 0 0 !important;
+    /* border:0 i added myself by removing border:1px solid */
+    border:0 ;
+    /* border: 1px solid; */
+    border-color: var(--borderColor);
+    border-radius: 5px;
+    color: var(--contentTextColor) !important;
+    cursor: text;
+    display: flex;
+    font-size: 15px;
+    height: 36px;
+    justify-content: center;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+    outline: 0;
+    padding: 8px 30px 8px 8px;
+    position: relative;
+    transition: all .3s ease;
+    vertical-align: initial;
+    width: 100%;
+}
+
+.country-select-dowm-arrow{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    right: 8px;
+    pointer-events: none;
+    color: var(--contentTextColor);
+}
+.birthday-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+
+}
+.profile-gender-select{
+    /* appearance:none added myself */
+    appearance: none;
+
+border: 0;
+    border-radius: 5px;
+    color: var(--contentTextColor) !important;
+    box-shadow: none !important;
+    display: inline-block !important;
+    font-size: 15px;
+    font-weight: 700;
+    height: auto;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+    outline: 0;
+    padding: 3px 0;
+    position: relative;
+    transition: all .3s ease;
+    vertical-align: initial;
+    width: 100%;
+
+
+/* background: 0 0 !important; */
+    
+}
+.profile-gender-select:disabled{
+    /* appearance:none added myself */
+    appearance: none;
+
+    background: 0 0 !important;
+    border: 0 !important;
+    cursor: auto !important;
+    opacity: 1 !important;
+}
+.profile-gender-option{
+    display: none;
+}
+.gender-select-down-arrow-icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    right: 8px;
+/* i added top 11px  */
+    top:11px;
+}
+
+/* original is below */
+
+/* .added-gender-select{
+    border: 1px solid;
+    font-weight: 400;
+    height: 36px;
+    padding: 8px;
+} */
+
+.added-gender-select{
+    appearance: none;
+background:  0 0;
+    border: 1px solid;
+    font-weight: 400;
+    height: 36px;
+    padding: 8px;
+
+    border-radius: 5px;
+    color: var(--contentTextColor) !important;
+    box-shadow: none !important;
+    display: inline-block !important;
+    font-size: 15px;
+    
+    
+    line-height: 1.2 !important;
+    margin: 0 !important;
+    outline: 0;
+    
+    position: relative;
+    transition: all .3s ease;
+    vertical-align: initial;
+    width: 100%;
+
+}
+
+/* .profile-input[type=tel] {
+    appearance: none;
+    background: 0 0 !important;
+    border: 0;
+    box-shadow: none !important;
+    color: var(--contentTextColor) !important;
+    cursor: text;
+    display: inline-block !important;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    height: auto;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+    outline: 0;
+    padding: 3px 0;
+    position: relative;
+    text-align: left;
+    transition: all .3s ease;
+    vertical-align: initial;
+    width: 100%;
+}
+.contact-profile-input{
+    appearance: none;
+    background: 0 0 !important;
+    border: 0;
+    box-shadow: none !important;
+    color: var(--contentTextColor) !important;
+    cursor: text;
+    display: inline-block !important;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    height: auto;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+    outline: 0;
+    padding: 3px 0;
+    position: relative;
+    text-align: left;
+    transition: all .3s ease;
+    vertical-align: initial;
+    width: 100%;
+} */
+.select-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+}
+
+.profile-input-select {
+    appearance: none;
+    border-color: var(--borderColor);
+    border-radius: 5px;
+    box-shadow: none !important;
+    color: var(--contentTextColor) !important;
+
+    display: inline-block !important;
+    font-size: 15px;
+    /* font-style: normal; */
+    font-weight: 700;
+    height: auto;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+    outline: 0;
+    padding: 3px 0;
+    position: relative;
+    text-align: left;
+    transition: all .3s ease;
+    vertical-align: initial;
+    width: 100%;
+}
+
+.profile-input-select:disabled {
+    background: 0 0 !important;
+    border: 0;
+    cursor: auto !important;
+    opacity: 1 !important;
+}
+
+.date-container {
+    align-items: center;
+    justify-content: normal;
+    /* justify-content: space-between; */
+    display: flex;
+    max-width: 100%;
+    position: relative;
+    /* width: 50%; */
+    width: 100%;
+}
+
+.date-year-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 20%; */
+    width: 100%;
+    position: relative
+}
+
+.date-month-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 20%; */
+    width: 100%;
+    position: relative
+}
+
+.marg-mon {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+
+.month {
+    max-width: 80px;
+}
+
+.day {
+    max-width: 80px;
+}
+
+.date-select,
+.date-select:disabled,
+.time-select,
+.time-select:disabled {
+    border: 1px solid !important;
+    border-color: var(--borderColor);
+    cursor: auto;
+    opacity: 1;
+}
+
+
+
+
+.date-day-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 20%; */
+    width: 100%;
+    position: relative
+}
+
+.profile-input-date-select,
+.profile-input-time-select {
+    appearance: none;
+    background: 0 0 !important;
+    border: 0;
+    border-color: var(--borderColor);
+    border-radius: 5px;
+    box-shadow: none !important;
+    color: var(--contentTextColor) !important;
+    cursor: text;
+    display: inline-block;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    height: 36px;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+    outline: 0;
+    padding: 8px;
+    position: relative;
+    text-align: left;
+    transition: all .3s ease;
+    vertical-align: initial;
+    width: 100%;
+}
+
+.time-container {
+    display: flex;
+    align-items: center;
+    justify-content: normal;
+    max-width: 100%;
+    width: 50%;
+    position: relative;
+
+}
+
+.marg-min-container {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+
+.hour,
+.minute {
+    /* width: 20%; */
+    width: 100%;
+    max-width: 80px;
+}
+
+.time-hour-container,
+.time-minute-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+/* .inner-container-time{
+    float: left;
+    width: 50%;
+} */
+.file-upload-anchor, .delete-uploaded-file-anchor {
+    cursor: pointer;
+    color: var(--contentTextColor);
+    display: inline-block;
+    margin-left: 3px;
+    margin-top: 10px;
+    text-decoration: none;
+    vertical-align: top;       
+}
+
+.file-container {
+    width: 85% !important;
+}
+
+.file-input-container {
+    background: none !important;
+    border: 0;
+    border-radius: 5px;
+    display: inline-block !important;
+    font-weight: 700;
+    overflow: hidden;
+    padding: 3px 0;
+    position: relative !important;
+    text-align: left !important;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+
+.file-span {
+    color: var(--contentTextColor) !important;
+    margin: 0;
+    opacity: 1;
+}
+
+.file-input {
+    border: 0;
+    box-shadow: none !important;
+    display: inline-block !important;
+    font-weight: 700;
+    overflow: hidden;
+    padding: 3px 0;
+    outline: 0;
+}
+
+.file-input[type=file] {
+    cursor: pointer;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0 !important;
+    width: 100%;
+    z-index: 10;
+}
+
+.inner-container-file {
+    width: 50%;
+    /* float: left; */
+}
+
+.outer-container-btn {
+    text-align: left;
+}
+
+/* .profile-inner-container-btn {
+    width: 100%;
+} */
+
+.profile-btn {
+    background: var(--primaryButtonBGColor) !important;
+    color: var(--primaryButtonTextColor);
+    border: 1px solid var(--primaryButtonBGColor);
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px;
+    margin-top: 10px;
+    min-height: 14px;
+    outline: 0;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    transition: all .3s;
+    vertical-align: initial;
+
+}
+.profile-btn-cancel{
+    background: 0 0;
+    color: var(--secondaryButtonBGColor);
+    border: 1px solid var(--secondaryButtonBGColor);
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px;
+    margin-top: 10px;
+    margin-right: 10px;
+    min-height: 14px;
+    outline: 0;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    transition: all .3s;
+    vertical-align: initial;
+}
+
+.profile-btn-cancel:hover{
+    border: 1px solid var(--secondaryButtonBGColor) !important;
+    background: var(--secondaryButtonBGColor) !important;
+    color: var(--primaryButtonTextColor);
+}
+
+
+
+
+
+/* --------------------------------------- */
+/* edit version text  START*/
+
+
+
+/* TEXT */
+.edit-version-sub-text-container{
+    color:grey;
+    margin-top:5px;
+}
+.edit-version-sub-text-icon-container{
+    display:inline-block;
+    height:20px;
+    width:20px;
+
+    /* added myself to set my font-awesome icon inside this div */
+    position: relative;
+}
+
+/* added myelf font-awesome icon of message(add-text) */
+.sub-text-add-icon{
+    position: absolute;
+    top: 2px;
+}
+.edit-version-sub-text-span{
+    margin: 0;
+    vertical-align: super;
+}
+
+
+/* DATE */
+.edit-version-added-date-select,.edit-version-added-time-select{
+    /* border: 1px solid !important; */
+    /* border-color: var(--borderColor); */
+    cursor: auto;
+    opacity: 1;
+}
+.edit-version-added-profile-input-date-select,
+.edit-version-added-profile-input-time-select {
+    appearance: none;
+    background: 0 0 !important;
+    border: 0;
+    border-color: var(--borderColor);
+    border-radius: 5px;
+    box-shadow: none !important;
+    color: var(--contentTextColor) !important;
+    /* cursor: text; */
+    /* display: inline-block; */
+    font-size: 16px;
+    font-style: normal;
+    /* font-weight: 700; */
+    height: 36px;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+    outline: 0;
+    /* padding: 8px; */
+    position: relative;
+    text-align: left;
+    transition: all .3s ease;
+    vertical-align: initial;
+    width: 100%;
+}
+.edit-version-new-date-select, .edit-version-new-time-select{
+    border: 1px solid;
+    display: flex;
+    font-weight: 400;
+    padding: 8px 25px 8px 8px;
+}
+
+/* common for date and time */
+.edit-version-icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    right: 8px;
+}
+
+
+.edit-version-added-file-input[type=file]{
+    cursor: pointer;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0 !important;
+    width: 100%;
+    z-index: 10;
+}
+.edit-version-added-file-input{
+    border: 0;
+    box-shadow:none !important;
+    display: inline-block !important;
+    font-weight: 700;
+    outline: 0;
+    padding: 3px 0;
+}
+
+
+/* FILE */
+.edit-version-file-input-container{
+    background: none;
+    border: 1px solid var(--borderColor);
+    border-radius: 5px;
+    display: inline-block !important;
+    font-weight: 400;
+    padding: 8px;
+    position: relative;
+    text-align: left !important;
+
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/* edit version text  END*/
+
+
+.not-visible-profile{
+    opacity: 0 !important;
+    display: none !important;
+}
+
+
+
+
+/* ------------------------------ */
+@media screen and (max-width: 992px) {
+    .profile-wrapper {
+        padding: 10px;
+    }
+    
+    .profile-outermost-container {
+        /*margin-left:0,height:auto "I added"  */
+        margin-left: 0;
+        height: auto;
+        
+        display: block;
+        float: none !important;
+        position: relative;
+        left: 0;
+        opacity: 1;
+        width: 100% !important;
+        
+    }
+    
+    .added-profile-innermost-container{
+        width: 100%;
+    }
+
+    .not-visible-profile{
+        position: absolute !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+
+    /* before i did on profile-inner-container2 donot keep=>float:left  */
+    /* .profile-inner-container2 {
+        float: left;
+        width: 50%;
+    } */
+    .second-inner-container2{
+        /* float: left; */
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 992px){
+
+
+    /* below class profile-inner-container is commented above in profile.css file itself */
+    /* .profile-inner-container-btn {
+        width: 100%;
+    } */
+
+    .second-inner-container{
+        width: 100%;
+    }
+}

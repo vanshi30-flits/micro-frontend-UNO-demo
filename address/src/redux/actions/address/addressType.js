@@ -1,0 +1,4 @@
+export const GET_ADDRESS_LIST = 'GET_ADDRESS_LIST';
+export const DELETE_ADDRESS = 'DELETE_ADDRESS';
+export const ADD_ADDRESS = 'ADD_ADDRESS';
+export const EDIT_ADDRESS = 'EDIT_ADDRESS';

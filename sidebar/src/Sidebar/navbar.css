@@ -1,0 +1,62 @@
+/* user-select:none, pointer-events:none */
+:root{
+    --color-background:255,255,255;
+    --color-foreground:18,18,18;
+    --navigationBGColor: rgb(32, 2, 100);
+    --navigationTextColor: rgb(255, 255, 255);
+}
+
+.back-btn-wrapper {
+    background-color: var(--navigationBGColor);
+    border-radius: 5px;
+    color: var(--navigationTextColor);
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    text-transform: capitalize;
+    display: none;
+}
+
+.back-btn-inner {
+    background: none;
+    border: 2px solid var(--navigationBGColor);
+    color: var(--navigationTextColor);
+    cursor: pointer;
+    float: left;
+    text-decoration: none;
+}
+
+.back-btn-inner:focus-visible{
+    outline: .2rem solid rgba(var(--color-foreground),.5);
+    outline-offset:.3rem;
+    box-shadow: 0 0 0 .3rem rgb(var(--color-background)),0 0 .5rem .4rem rgba(var(--color-foreground),.3);
+}
+
+.nav-name {
+    font-weight: 700;
+    color: var(--navigationTextColor);
+    display: inline-block;
+    pointer-events: none;
+    margin: auto;
+}
+
+.nav-back-icon {
+    height: 12px;
+    width: 12px;
+    margin-right: 10px;
+    display: inline-block;
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+}
+
+
+
+/* ---------------------------- */
+@media screen and (max-width: 992px) {
+    .back-btn-wrapper {
+        display: block;
+    }
+
+
+}

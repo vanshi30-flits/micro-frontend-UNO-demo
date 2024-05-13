@@ -1,0 +1,24 @@
+// label[0].style.removeProperty('display');
+// $(".innermost-input-profile-container").css({'width':'','align-items':'','display':'block'})
+// list.replace('innermost-input-profile-container', 'added-innermost-input-profile-container')
+// $('#1').removeProp('width');
+// div[0].setAttribute('innermost-input-profile-container','display:block');
+      // div[0].setAttribute('innermost-input-profile-container','width: ');
+      // div[0].setAttribute('innermost-input-profile-container','align-items: ');
+      // label[0].className += ' added-profile-innermost-container';
+      // var $r = input_profile[i];
+      //var $obj =  $("input[type=tel]").css({'border':'','border-color':'','display':'','font-weight':'','height':'','padding':''})
+      // if($('[type=tel]').css({'border':'','border-color':'','display':'','font-weight':'','height':'','padding':''})){
+      // console.log("DONE2");
+      // input.add('added-profile-input');  
+      // }
+
+      // select_gender !== undefined && select_gender.tagName === 'SELECT' && select_gender.name === 'gender'
+        // select_gender[i] !== undefined || select_gender[i].className == 'profile-gender-select'
+        // || select_gender[i].className == 'profile-gender-select'
+        // .name='gender' .tagName='SELECT'
+
+// let validType=['tel'];
+// if(validType.includes(input_profile[i].type)){
+
+// }

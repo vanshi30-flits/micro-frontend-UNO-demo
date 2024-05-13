@@ -1,0 +1,121 @@
+:root {
+    --navigationHoverBGColor: rgb(121, 103, 162);
+    --navigationBGColor: rgb(32, 2, 100);
+    --navigationTextColor: rgb(255, 255, 255);
+}
+
+.sidebar-main {
+    background-color: var(--navigationBGColor);
+    border-radius: 5px;
+    float: left;
+    position: relative;
+    /* doubt opacity not detacted */
+    transition: left .3s, opacity .3s;
+    z-index: 1;
+    width: 242px;
+
+}
+
+.sidebar-inner {
+    letter-spacing: normal !important;
+}
+
+.menu-item {
+    cursor: pointer;
+    margin: 0 !important;
+    transition: all .3s;
+}
+
+.menu-item-active {
+    background-color: var(--navigationHoverBGColor);
+    border-left: 4px solid !important;
+    border-color: var(--navigationBGColor);
+}
+
+.menu-item:hover {
+    background-color: var(--navigationHoverBGColor);
+    border-left: 4px solid !important;
+    border-color: var(--navigationBGColor);
+}
+
+.profile-sidebar {
+    position: relative;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.item-name {
+    font-size: 13px;
+    text-transform: capitalize;
+    color: var(--navigationTextColor);
+}
+
+.sidebar-icon {
+    float: right;
+    height: 12px;
+    color: var(--navigationTextColor);
+    width: 12px;
+    /* display: none; */
+    position: relative;
+}
+
+.count-bg-color {
+    background-color: var(--navigationHoverBGColor);
+    border-radius: 25px;
+    color: var(--navigationTextColor) !important;
+    display: inline-flex;
+    font-weight: 800;
+    font-size: 13px;
+    height: 25px;
+    min-width: 25px;
+    margin-left: 10px;
+    padding: 0 5px;
+    position: relative;
+    transition: all .5s;
+    width: auto;
+}
+
+.count {
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+
+.menu-item:hover .count-bg-color{
+    background: var(--navigationBGColor);
+    color: var(--navigationTextColor) !important;
+}
+.menu-item-active .count-bg-color {
+    background: var(--navigationBGColor);
+    color: var(--navigationTextColor) !important;
+}
+
+/* -------------------- */
+
+@media screen and (max-width: 992px) {
+    .sidebar-main {
+        display: block;
+        float: none !important;
+        position: absolute;
+        left: -100%;
+        opacity: 0;
+        width: 100% !important;
+    }
+
+    .sidebar-main-mobile {
+        opacity: 1;
+        left: 0 !important;
+        position: relative;
+    }
+
+    /* For back button click */
+
+    .sidebar-main {
+        display: block;
+        float: none !important;
+        width: 100% !important;
+
+    }
+}
